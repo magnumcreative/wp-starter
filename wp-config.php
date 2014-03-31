@@ -74,7 +74,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'ucn_';
 
 /**
  * WordPress Localized Language, defaults to English.
@@ -84,7 +84,30 @@ $table_prefix  = 'wp_';
  * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
  * language support.
  */
-define('WPLANG', '');
+define('WPLANG', 'en_EN');
+
+/** Database Charset to use in creating database tables. */
+define('DB_CHARSET', 'utf8');
+
+/**
+* How often WordPress empties trash.
+*/
+define('EMPTY_TRASH_DAYS', 30 );  // once every 30 days
+
+/**
+* Enable post revisions and how many are kept.
+* Reduces the load of the server (lower num is better) when turned off.
+*/
+define('WP_POST_REVISIONS', false );
+/*define('WP_POST_REVISIONS', 3);*/
+
+/**
+* How often does autosave fire.
+*/
+define('AUTOSAVE_INTERVAL', 240 );  // in seconds
+
+/** The Database Collate type. Don't change this if in doubt. */
+define('DB_COLLATE', '');
 
 /**
  * For developers: WordPress debugging mode.
