@@ -3,4 +3,4 @@
 	url = git://github.com/WordPress/WordPress.git
 [submodule "wrk/plugins/wordpress-seo"]
 	path = wrk/plugins/wordpress-seo
-	url = git@github.com:Yoast/wordpress-seo.git
+	url = git://github.com/Yoast/wordpress-seo.git
