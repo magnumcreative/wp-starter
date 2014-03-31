@@ -16,10 +16,10 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/magsite');
+define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
 define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
-define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/bullet-proof');
-define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/bullet-proof');
+define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wrk');
+define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wrk');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
