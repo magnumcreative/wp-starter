@@ -48,6 +48,9 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+/** Sets the default theme to load, should rename this once you start your project */
+define('WP_DEFAULT_THEME', 'roots');
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
