@@ -13,4 +13,6 @@ Adding your theme. The below will grab the roots theme and install in to the the
 git git clone git://github.com/roots/roots.git wrk/themes/<name theme>
 ````
 <h3>Working with raw HTML folder</h3>
-This needs to be added but once there you will get a base started to build out raw html files that are connected to the theme itself. Any changes in JS or LESS will automatically be reflected in the raw folder
+This needs to be added still but once there you will get a set of files allowing you to build out raw html files that are connected to the theme itself. Any changes in JS or LESS will automatically be reflected in the raw folder. Pending your workflow you can decide if you want to build raw html or work directly in the theme templates and skip having raw html files which you will still have to integrate to the theme.
+
+Having raw html files is nice. It allows you to think out large or small design changes without effecting any of the WP templates creating a bunch of test templates which would garbage up the templates folder. Your call.
