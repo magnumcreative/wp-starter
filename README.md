@@ -10,7 +10,7 @@ git submodule update
 Adding your theme. The below will grab the roots theme and install in to the themes dir. Make sure to change the name of your theme to match the project or company. The below is a our common starter theme - <a href="https://github.com/roots/roots">Roots</a> - but you can apply any theme you want.
 
 ````
-git git clone git://github.com/roots/roots.git wrk/themes/<name theme>
+git clone git://github.com/roots/roots.git wrk/themes/<name theme>
 ````
 <h3>Working with raw HTML folder</h3>
 This needs to be added still but once there you will get a set of files allowing you to build out raw html files that are connected to the theme itself. Any changes in JS or LESS will automatically be reflected in the raw folder. Pending your workflow you can decide if you want to build raw html or work directly in the theme templates and skip having raw html files which you will still have to integrate to the theme.
