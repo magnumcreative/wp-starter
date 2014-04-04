@@ -1,7 +1,8 @@
 This is a base Wordpress starter theme configured how we start most projects
 
 ````
-git clone 
+git cd <your project dir>
+git clone https://github.com/magnumcreative/wp-starter.git
 git submodule init
 git submodule update
 ````
