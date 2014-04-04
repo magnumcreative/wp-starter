@@ -12,5 +12,5 @@ Adding your theme. The below will grab the roots theme and install in to the the
 ````
 git git clone git://github.com/roots/roots.git wrk/themes/<name theme>
 ````
-<h3>raw-html</h3>
+<h3>Working with raw HTML folder</h3>
 This needs to be added but once there you will get a base started to build out raw html files that are connected to the theme itself. Any changes in JS or LESS will automatically be reflected in the raw folder
