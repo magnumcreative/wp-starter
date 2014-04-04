@@ -1,7 +1,6 @@
 This is a base Wordpress starter theme configured how we start most projects
 
 ````
-//change to the dir where you want wordpress installed
 git cd <your project dir>
 git clone https://github.com/magnumcreative/wp-starter.git
 git submodule init
