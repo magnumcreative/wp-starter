@@ -3,10 +3,13 @@ This is a base Wordpress starter theme configured how we start most projects
 ````
 //change to the dir where you want wordpress installed
 git cd <your project dir>
+
 //clone this to your desktop to the above dir
 git clone https://github.com/magnumcreative/wp-starter.git
+
 //initialize the submodules locally
 git submodule init
+
 //run to pull wordpress and any other required items setup as submodules
 git submodule update
 ````
