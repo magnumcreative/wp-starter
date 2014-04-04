@@ -7,8 +7,8 @@ git submodule init
 git submodule update
 ````
 
-Adding your theme. The below will grab the roots theme and install in to the themes dir
+Adding your theme. The below will grab the roots theme and install in to the themes dir. Make sure to change the name of your theme to match the project or company. "roots" is the default theme name but you may wish to change it to "xyz".
 
 ````
-git git clone git://github.com/roots/roots.git wrk/themes/roots
+git git clone git://github.com/roots/roots.git wrk/themes/<name theme>
 ````
