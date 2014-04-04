@@ -1,10 +1,10 @@
 This is a base Wordpress starter theme configured how we start most projects
 
 ````
-git cd <your project dir>
-git clone https://github.com/magnumcreative/wp-starter.git
-git submodule init
-git submodule update
+git cd <your project dir> <-- change to the dir where you want wordpress installed
+git clone https://github.com/magnumcreative/wp-starter.git <-- clone this to your desktop to the above dir
+git submodule init <-- initialize the submodules locally
+git submodule update <-- run to pull wordpress and any other required items setup as submodules
 ````
 <h3>Add your theme</h3>
 Adding your theme. The below will grab the roots theme and install in to the themes dir. Make sure to change the name of your theme to match the project or company. The below is a our common starter theme - <a href="https://github.com/roots/roots">Roots</a> - but you can apply any theme you want.
