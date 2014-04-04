@@ -1,5 +1,7 @@
 This is a base Wordpress starter theme configured how we start most projects
 
 ````
-Add
+git clone 
+git submodule init
+git submodule update
 ````
