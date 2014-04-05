@@ -113,6 +113,14 @@ define('AUTOSAVE_INTERVAL', 240 );  // in seconds
 define('DB_COLLATE', '');
 
 /**
+* Increased memory limits
+* http://codex.wordpress.org/Editing_wp-config.php#Increasing_memory_allocated_to_PHP
+*/
+define( 'WP_MEMORY_LIMIT', '64M' );
+define( 'WP_MEMORY_LIMIT', '96M' );
+define( 'WP_MAX_MEMORY_LIMIT', '256M' );
+
+/**
  * For developers: WordPress debugging mode.
  *
  * Change this to true to enable the display of notices during development.
