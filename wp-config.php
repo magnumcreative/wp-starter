@@ -117,7 +117,6 @@ define('DB_COLLATE', '');
 * http://codex.wordpress.org/Editing_wp-config.php#Increasing_memory_allocated_to_PHP
 */
 define( 'WP_MEMORY_LIMIT', '64M' );
-define( 'WP_MEMORY_LIMIT', '96M' );
 define( 'WP_MAX_MEMORY_LIMIT', '256M' );
 
 /**
