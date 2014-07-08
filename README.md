@@ -49,7 +49,7 @@ Vista and Windows 7 use User Account Control (UAC) so Notepad must be run as Adm
 127.0.0.1       mysite.mag
 127.0.0.1       www.mysite.mag (don't add both)
 ````
-Then apply the domain to WAMP and Restar the server
+Then apply the domain to WAMP and restart the server
 * Know where you installed WAMP
 * Open path to httpd-vhosts
 * D:\Utilities\wamp\bin\apache\apache2.2.22\conf\extra
