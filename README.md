@@ -30,8 +30,7 @@ git pull
 # check status
 git-status
 ````
-### httpd-vhosts.conf
-
+### httpd-vhosts.conf and host file
 Steps to configure your local machine to load the development site under domain of your chooseing.
 
 Vista and Windows 7 use User Account Control (UAC) so Notepad must be run as Administrator.
@@ -44,10 +43,20 @@ Vista and Windows 7 use User Account Control (UAC) so Notepad must be run as Adm
 * Click Open
 
 ````
+#add the desired domain mapping to your host file
+#if the site is to use WWW then ensure you map it in the domain as well
+
+127.0.0.1       mysite.mag
+127.0.0.1       www.mysite.mag (don't add both)
+````
+Then apply the domain to WAMP and Restar the server
+* Know where you installed WAMP
+* Open path to httpd-vhosts
+* D:\Utilities\wamp\bin\apache\apache2.2.22\conf\extra
+* Add host (see below)
+````
 <VirtualHost *:80>
-  ServerName benword.dev
-  CustomLog "/Users/ben/Sites/logs/benword-access_log" combined
-  ErrorLog "/Users/ben/Sites/logs/benword-error_log"
-  DocumentRoot "/Users/ben/Sites/benword"
+  ServerName mysite.mag
+  DocumentRoot "/path/to/website/mysite"
 </VirtualHost>
 ````
