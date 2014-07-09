@@ -1,5 +1,19 @@
 This is a base Wordpress starter theme configured how we start most projects
 
+### Setup
+Note: You can view the finished project on Github; davidwinter/wordpress-with-git
+
+Create a new project directory:
+
+````
+mkdir mysite && cd mysite
+git init
+touch README.md
+git add README.md
+git commit -m "Initial commit."
+````
+You now have a blank project to start with.
+
 ````
 git cd <your project dir>
 git clone https://github.com/magnumcreative/wp-starter.git .
