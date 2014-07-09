@@ -1,9 +1,6 @@
 This is a base Wordpress starter theme configured how we start most projects
 
-### Setup
-Note: You can view the finished project on Github; davidwinter/wordpress-with-git
-
-Create a new project directory:
+### Create a new project directory:
 
 ````
 mkdir mysite && cd mysite
