@@ -117,14 +117,25 @@ define('DB_COLLATE', '');
 define( 'WP_MEMORY_LIMIT', '64M' );
 define( 'WP_MAX_MEMORY_LIMIT', '256M' );
 
-/**
- * For developers: WordPress debugging mode.
- *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
- */
-define('WP_DEBUG', false);
+// ===========
+// Hide errors
+// ===========
+ini_set( 'display_errors', 0 );
+define( 'WP_DEBUG_DISPLAY', false );
+
+// =================================================================
+// Debug mode
+// Debugging? Enable these. Can also enable them in local-config.php
+// =================================================================
+// define( 'SAVEQUERIES', true );
+// define( 'WP_DEBUG', true );
+
+// ======================================
+// Load a Memcached config if we have one
+// http://stackoverflow.com/questions/14329520/is-memcached-worth-running-on-only-one-server
+// ======================================
+if ( file_exists( dirname( __FILE__ ) . '/memcached.php' ) )
+    $memcached_servers = include( dirname( __FILE__ ) . '/memcached.php' );
 
 /* That's all, stop editing! Happy blogging. */
 
