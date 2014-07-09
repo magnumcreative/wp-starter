@@ -1,6 +1,7 @@
 This is a base Wordpress starter theme configured how we start most projects
 
-### Create a new project directory:
+### Create project directory
+Create your local project diretory to start things off. You may already have a folder or directoy created. If that is the case you decide if you need to create a few files or just commit what is there already. Note: when committing to GitHub it will look for a repo with the same name as your local directory and push there.
 
 ````
 mkdir mysite && cd mysite
