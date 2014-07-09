@@ -10,6 +10,8 @@ git add README.md
 git commit -m "Initial commit."
 ````
 You now have a blank project to start with.
+### Clone wp-starter
+Clone the wp-starter repo to your local working project directory that you created above
 
 ````
 git cd <your project dir>
