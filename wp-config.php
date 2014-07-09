@@ -14,6 +14,22 @@
  * @package WordPress
  */
 
+/**#@+
+// ====
+// stop Wordpress core from auto updating because we have it under version control
+// enabeling this may result in local and live environments becoming different
+*/
+// http://codex.wordpress.org/Configuring_Automatic_Background_Updates
+define( 'WP_AUTO_UPDATE_CORE', false );
+
+/**#@+
+// ====
+// security settings
+*/
+define( 'DISALLOW_FILE_EDIT', true );
+
+// =====================================================================
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
@@ -33,7 +49,7 @@ if ($_SERVER['REMOTE_ADDR']=='127.0.0.1') {
 if (WP_ENV == 'development') {
     define('DB_NAME', 'mydb-dev');
     define('DB_USER', 'root');
-    define('DB_PASSWORD', '');
+    define('DB_PASSWORD', ''); // you can leave blank
     define('DB_HOST', 'localhost');
 } else {
     define('DB_NAME', 'mydb-prod');
@@ -46,8 +62,8 @@ if (WP_ENV == 'development') {
 define('DB_CHARSET', 'utf8');
 define( 'DB_COLLATE', '' );
 
-/** Sets the default theme to load, should rename this once you start your project */
-define('WP_DEFAULT_THEME', 'roots');
+/** Sets the default theme to load */
+define('WP_DEFAULT_THEME', 'roots'); // < --- change this to your theme name
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -127,11 +143,12 @@ define( 'WP_DEBUG_DISPLAY', false );
 // Debug mode
 // Debugging? Enable these. Can also enable them in local-config.php
 // =================================================================
+define( 'WP_DEBUG', false );
 // define( 'SAVEQUERIES', true );
-// define( 'WP_DEBUG', true );
 
 // ======================================
 // Load a Memcached config if we have one
+// Require for this to be installed and running on your server, see http://memcached.org/
 // http://stackoverflow.com/questions/14329520/is-memcached-worth-running-on-only-one-server
 // ======================================
 if ( file_exists( dirname( __FILE__ ) . '/memcached.php' ) )
