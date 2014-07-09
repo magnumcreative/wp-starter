@@ -22,7 +22,7 @@ Having raw html files is nice. It allows you to think out large or small design 
 
 ````
 # switch to the master branch
-git checkout master
+git checkout 3.9.1
 
 # pull the current version
 git pull
