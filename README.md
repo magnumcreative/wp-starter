@@ -1,5 +1,8 @@
-This is a base Wordpress starter theme configured how we start most projects
+# MAGNUM WP-Starter
+This is a base Wordpress starter configuration. The following moves wordpress in to it's own directory, creates a working directory for your theme develope and has base wp-config settings commonly used in our workflow.
 
+## Setup
+The following steps will get your local environment setup with the repo
 ### Create project directory
 Create your local project diretory to start things off. You may already have a folder or directoy created. If that is the case you decide if you need to create a few files or just commit what is there already. Note: when committing to GitHub it will look for a repo with the same name as your local directory and push there.
 
@@ -43,6 +46,9 @@ git pull
 # check status
 git-status
 ````
+------------
+## Working Locally
+
 ### httpd-vhosts.conf and host file
 Steps to configure your local machine to load the development site under domain of your chooseing.
 
