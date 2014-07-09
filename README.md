@@ -40,14 +40,12 @@ git pull
 # check status
 git-status
 ````
-------------
 ## Raw HTML folder
 
 **We still need to add some files here** but once there you will get a set of files allowing you to build out raw html files that are connected to the theme itself. Any changes in JS or LESS will automatically be reflected in the raw folder. Pending your workflow you can decide if you want to build raw html or work directly in the theme templates and skip having raw html files which you will still have to integrate to the theme.
 
 Having raw html files is nice. It allows you to think out large or small design changes without effecting any of the WP templates creating a bunch of test templates which would garbage up the templates folder. Your call.
 
-------------
 ## Working Locally
 
 ### httpd-vhosts.conf and host file
