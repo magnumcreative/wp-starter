@@ -47,10 +47,7 @@ if ($_SERVER['REMOTE_ADDR']=='127.0.0.1') {
 
 // MySQL settings - You can get this info from your web host //
 if (WP_ENV == 'development') {
-    define('DB_NAME', 'mydb-dev');
-    define('DB_USER', 'root');
-    define('DB_PASSWORD', ''); // you can leave blank
-    define('DB_HOST', 'localhost');
+    include( 'local-config.php' );
 } else {
     define('DB_NAME', 'mydb-prod');
     define('DB_USER', 'username');
@@ -132,19 +129,6 @@ define('DB_COLLATE', '');
 */
 define( 'WP_MEMORY_LIMIT', '64M' );
 define( 'WP_MAX_MEMORY_LIMIT', '256M' );
-
-// ===========
-// Hide errors
-// ===========
-ini_set( 'display_errors', 0 );
-define( 'WP_DEBUG_DISPLAY', false );
-
-// =================================================================
-// Debug mode
-// Debugging? Enable these. Can also enable them in local-config.php
-// =================================================================
-define( 'WP_DEBUG', false );
-// define( 'SAVEQUERIES', true );
 
 // ======================================
 // Load a Memcached config if we have one
