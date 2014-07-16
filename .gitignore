@@ -5,7 +5,7 @@
 *.bak
 *.swp
 Thumbs.db
-
+local-config.php
 assets/*
 wrk/uploads/
 wrk/blogs.dir/
