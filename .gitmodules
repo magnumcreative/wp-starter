@@ -1,6 +1,7 @@
 [submodule "wordpress"]
 	path = wordpress
 	url = git://github.com/WordPress/WordPress.git
+    ignore = untracked # this is added because we need to ignore the htacess file ithemes generates
 [submodule "wrk/plugins/wordpress-seo"]
 	path = wrk/plugins/wordpress-seo
 	url = git://github.com/Yoast/wordpress-seo.git
