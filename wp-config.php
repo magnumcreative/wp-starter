@@ -32,10 +32,10 @@ define( 'DISALLOW_FILE_EDIT', true );
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
-define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
-define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wrk');
-define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wrk');
+define( 'WP_SITEURL',     'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
+define( 'WP_HOME',        'http://' . $_SERVER['SERVER_NAME']);
+define( 'WP_CONTENT_DIR',  $_SERVER['DOCUMENT_ROOT'] .          '/wrk');
+define( 'WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wrk');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
@@ -47,12 +47,11 @@ if ($_SERVER['REMOTE_ADDR']=='127.0.0.1') {
 
 // MySQL settings - You can get this info from your web host //
 if (WP_ENV == 'development') {
+    //ensure this file is not under version control
     include( 'local-config.php' );
 } else {
-    define('DB_NAME', 'mydb-prod');
-    define('DB_USER', 'username');
-    define('DB_PASSWORD', 'pasdword');
-    define('DB_HOST', 'mysql.mysite.com');
+    //ensure this file is not under version control
+    include( 'prod-config.php' );
 }
 
 /** Database Charset to use in creating database tables. */
@@ -60,27 +59,7 @@ define('DB_CHARSET', 'utf8');
 define( 'DB_COLLATE', '' );
 
 /** Sets the default theme to load */
-define('WP_DEFAULT_THEME', 'roots'); // < --- change this to your theme name
-
-/**#@+
- * Authentication Unique Keys and Salts.
- *
- * Change these to different unique phrases!
- * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
- * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
- *
- * @since 2.6.0
- */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
-
-/**#@-*/
+define('WP_DEFAULT_THEME', 'mytheme'); // < --- change this to your theme name
 
 /**
  * WordPress Database Table prefix.
@@ -88,7 +67,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'ucn_';
+$table_prefix  = 'xyz_';
 
 /**
  * WordPress Localized Language, defaults to English.
@@ -99,9 +78,6 @@ $table_prefix  = 'ucn_';
  * language support.
  */
 define('WPLANG', 'en_EN');
-
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
 
 /**
 * How often WordPress empties trash.
