@@ -5,8 +5,8 @@
 *.bak
 *.swp
 Thumbs.db
-local-config.php
-prod-config.php
+wp-config.development.php
+wp-config.production.php
 assets/*
 wrk/uploads/
 wrk/blogs.dir/
